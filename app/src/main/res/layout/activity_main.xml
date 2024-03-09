@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:fontFamily="Jetbrains Mono"
+        android:text="@string/calculator"
+        android:textSize="34sp"
+        android:background="@color/cardview_dark_background"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/tvNumberOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:labelFor="@id/etNumberOne"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/number_one"
+        app:layout_constraintBottom_toTopOf="@+id/etNumberOne"
+        app:layout_constraintStart_toStartOf="@+id/etNumberOne" />
+
+    <EditText
+        android:id="@+id/etNumberOne"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <TextView
+        android:id="@+id/tvNumberTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:labelFor="@id/etNumberTwo"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/number_two"
+        app:layout_constraintBottom_toTopOf="@+id/etNumberTwo"
+        app:layout_constraintStart_toStartOf="@+id/etNumberTwo" />
+
+    <EditText
+        android:id="@+id/etNumberTwo"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="96dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumberOne" />
+
+    <Button
+        android:id="@+id/bSum"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/sum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumberTwo" />
+
+    <Button
+        android:id="@+id/bMultiply"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/multiply"
+        app:layout_constraintStart_toEndOf="@+id/bSum"
+        app:layout_constraintTop_toBottomOf="@+id/etNumberTwo" />
+
+    <Button
+        android:id="@+id/bDivide"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/Divide"
+        app:layout_constraintStart_toEndOf="@+id/bMultiply"
+        app:layout_constraintTop_toBottomOf="@+id/etNumberTwo" />
+
+    <Button
+        android:id="@+id/bSubtract"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Subtract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bDivide"
+        app:layout_constraintTop_toBottomOf="@+id/etNumberTwo" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/Result"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSum" />
+
+    <TextView
+        android:id="@+id/tvResultValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/tvResult"
+        app:layout_constraintTop_toBottomOf="@+id/bSum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

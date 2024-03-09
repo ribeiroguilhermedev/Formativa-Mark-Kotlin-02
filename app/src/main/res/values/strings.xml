@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CalculadoraMark</string>
+    <string name="number_one">Número 1</string>
+    <string name="calculator">Calculadora</string>
+    <string name="number_two">Número 2</string>
+    <string name="sum">+</string>
+    <string name="multiply">X</string>
+    <string name="Divide">/</string>
+    <string name="Subtract">-</string>
+    <string name="Result">Resultado:</string>
+</resources>
